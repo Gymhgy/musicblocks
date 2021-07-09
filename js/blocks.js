@@ -4859,7 +4859,7 @@ function Blocks(activity) {
             return;
         }
 
-        this.selectedStack = this.activeBlock;
+        this.selectedStack = this.findTopBlock(this.activeBlock);
 
         // Copy the selectedStack.
         this.selectedBlocksObj = JSON.parse(JSON.stringify(this._copyBlocksToObj(false)));
